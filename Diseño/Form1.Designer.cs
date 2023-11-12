@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.grpDatospersona = new System.Windows.Forms.GroupBox();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnEjecutar = new System.Windows.Forms.Button();
+            this.dtgDatospersona = new System.Windows.Forms.DataGridView();
             this.dtpFechaNacimiento = new System.Windows.Forms.DateTimePicker();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
@@ -40,22 +43,19 @@
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblIdentificacion = new System.Windows.Forms.Label();
             this.grpDatosTipopersona = new System.Windows.Forms.GroupBox();
-            this.txtClave = new System.Windows.Forms.TextBox();
-            this.lblClave = new System.Windows.Forms.Label();
-            this.lblAdministrador = new System.Windows.Forms.Label();
-            this.lblColaborador = new System.Windows.Forms.Label();
-            this.lblCliente = new System.Windows.Forms.Label();
-            this.textAdministrador = new System.Windows.Forms.TextBox();
-            this.txtColaborador = new System.Windows.Forms.TextBox();
-            this.txtCliente = new System.Windows.Forms.TextBox();
-            this.btnEjecutar = new System.Windows.Forms.Button();
-            this.btnIniciar = new System.Windows.Forms.Button();
-            this.dtgDatospersona = new System.Windows.Forms.DataGridView();
             this.dtgDatoTipopersona = new System.Windows.Forms.DataGridView();
-            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnIniciar = new System.Windows.Forms.Button();
+            this.txtCliente = new System.Windows.Forms.TextBox();
+            this.txtColaborador = new System.Windows.Forms.TextBox();
+            this.textAdministrador = new System.Windows.Forms.TextBox();
+            this.lblCliente = new System.Windows.Forms.Label();
+            this.lblColaborador = new System.Windows.Forms.Label();
+            this.lblAdministrador = new System.Windows.Forms.Label();
+            this.lblClave = new System.Windows.Forms.Label();
+            this.txtClave = new System.Windows.Forms.TextBox();
             this.grpDatospersona.SuspendLayout();
-            this.grpDatosTipopersona.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgDatospersona)).BeginInit();
+            this.grpDatosTipopersona.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgDatoTipopersona)).BeginInit();
             this.SuspendLayout();
             // 
@@ -80,6 +80,34 @@
             this.grpDatospersona.TabIndex = 0;
             this.grpDatospersona.TabStop = false;
             this.grpDatospersona.Text = "Datos de persona";
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(467, 187);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.TabIndex = 10;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            // 
+            // btnEjecutar
+            // 
+            this.btnEjecutar.Location = new System.Drawing.Point(21, 187);
+            this.btnEjecutar.Name = "btnEjecutar";
+            this.btnEjecutar.Size = new System.Drawing.Size(75, 23);
+            this.btnEjecutar.TabIndex = 9;
+            this.btnEjecutar.Text = "Ejecutar";
+            this.btnEjecutar.UseVisualStyleBackColor = true;
+            // 
+            // dtgDatospersona
+            // 
+            this.dtgDatospersona.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgDatospersona.GridColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dtgDatospersona.Location = new System.Drawing.Point(302, 20);
+            this.dtgDatospersona.Name = "dtgDatospersona";
+            this.dtgDatospersona.Size = new System.Drawing.Size(240, 150);
+            this.dtgDatospersona.TabIndex = 2;
+            this.dtgDatospersona.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // dtpFechaNacimiento
             // 
@@ -175,48 +203,52 @@
             this.grpDatosTipopersona.Controls.Add(this.lblAdministrador);
             this.grpDatosTipopersona.Controls.Add(this.lblClave);
             this.grpDatosTipopersona.Controls.Add(this.txtClave);
-            this.grpDatosTipopersona.Location = new System.Drawing.Point(23, 257);
+            this.grpDatosTipopersona.Location = new System.Drawing.Point(23, 258);
             this.grpDatosTipopersona.Name = "grpDatosTipopersona";
-            this.grpDatosTipopersona.Size = new System.Drawing.Size(602, 203);
+            this.grpDatosTipopersona.Size = new System.Drawing.Size(585, 202);
             this.grpDatosTipopersona.TabIndex = 1;
             this.grpDatosTipopersona.TabStop = false;
             this.grpDatosTipopersona.Text = "Tipo de persona";
             // 
-            // txtClave
+            // dtgDatoTipopersona
             // 
-            this.txtClave.Location = new System.Drawing.Point(103, 123);
-            this.txtClave.Name = "txtClave";
-            this.txtClave.Size = new System.Drawing.Size(140, 20);
-            this.txtClave.TabIndex = 11;
+            this.dtgDatoTipopersona.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgDatoTipopersona.GridColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dtgDatoTipopersona.Location = new System.Drawing.Point(302, 29);
+            this.dtgDatoTipopersona.Name = "dtgDatoTipopersona";
+            this.dtgDatoTipopersona.Size = new System.Drawing.Size(240, 150);
+            this.dtgDatoTipopersona.TabIndex = 3;
             // 
-            // lblClave
+            // btnIniciar
             // 
-            this.lblClave.AutoSize = true;
-            this.lblClave.Location = new System.Drawing.Point(58, 130);
-            this.lblClave.Name = "lblClave";
-            this.lblClave.Size = new System.Drawing.Size(34, 13);
-            this.lblClave.TabIndex = 12;
-            this.lblClave.Text = "Clave";
-            this.lblClave.Click += new System.EventHandler(this.label7_Click);
+            this.btnIniciar.Location = new System.Drawing.Point(45, 160);
+            this.btnIniciar.Name = "btnIniciar";
+            this.btnIniciar.Size = new System.Drawing.Size(75, 23);
+            this.btnIniciar.TabIndex = 18;
+            this.btnIniciar.Text = "Iniciar";
+            this.btnIniciar.UseVisualStyleBackColor = true;
             // 
-            // lblAdministrador
+            // txtCliente
             // 
-            this.lblAdministrador.AutoSize = true;
-            this.lblAdministrador.Location = new System.Drawing.Point(58, 29);
-            this.lblAdministrador.Name = "lblAdministrador";
-            this.lblAdministrador.Size = new System.Drawing.Size(70, 13);
-            this.lblAdministrador.TabIndex = 9;
-            this.lblAdministrador.Text = "Administrador";
-            this.lblAdministrador.Click += new System.EventHandler(this.label8_Click);
+            this.txtCliente.Location = new System.Drawing.Point(134, 83);
+            this.txtCliente.Name = "txtCliente";
+            this.txtCliente.Size = new System.Drawing.Size(100, 20);
+            this.txtCliente.TabIndex = 17;
             // 
-            // lblColaborador
+            // txtColaborador
             // 
-            this.lblColaborador.AutoSize = true;
-            this.lblColaborador.Location = new System.Drawing.Point(58, 55);
-            this.lblColaborador.Name = "lblColaborador";
-            this.lblColaborador.Size = new System.Drawing.Size(64, 13);
-            this.lblColaborador.TabIndex = 13;
-            this.lblColaborador.Text = "Colaborador";
+            this.txtColaborador.Location = new System.Drawing.Point(134, 53);
+            this.txtColaborador.Name = "txtColaborador";
+            this.txtColaborador.Size = new System.Drawing.Size(100, 20);
+            this.txtColaborador.TabIndex = 16;
+            // 
+            // textAdministrador
+            // 
+            this.textAdministrador.Location = new System.Drawing.Point(134, 26);
+            this.textAdministrador.Name = "textAdministrador";
+            this.textAdministrador.Size = new System.Drawing.Size(100, 20);
+            this.textAdministrador.TabIndex = 15;
+            this.textAdministrador.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // lblCliente
             // 
@@ -228,73 +260,41 @@
             this.lblCliente.Text = "Cliente";
             this.lblCliente.Click += new System.EventHandler(this.label11_Click);
             // 
-            // textAdministrador
+            // lblColaborador
             // 
-            this.textAdministrador.Location = new System.Drawing.Point(134, 26);
-            this.textAdministrador.Name = "textAdministrador";
-            this.textAdministrador.Size = new System.Drawing.Size(100, 20);
-            this.textAdministrador.TabIndex = 15;
-            this.textAdministrador.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            this.lblColaborador.AutoSize = true;
+            this.lblColaborador.Location = new System.Drawing.Point(58, 55);
+            this.lblColaborador.Name = "lblColaborador";
+            this.lblColaborador.Size = new System.Drawing.Size(64, 13);
+            this.lblColaborador.TabIndex = 13;
+            this.lblColaborador.Text = "Colaborador";
             // 
-            // txtColaborador
+            // lblAdministrador
             // 
-            this.txtColaborador.Location = new System.Drawing.Point(134, 53);
-            this.txtColaborador.Name = "txtColaborador";
-            this.txtColaborador.Size = new System.Drawing.Size(100, 20);
-            this.txtColaborador.TabIndex = 16;
+            this.lblAdministrador.AutoSize = true;
+            this.lblAdministrador.Location = new System.Drawing.Point(58, 29);
+            this.lblAdministrador.Name = "lblAdministrador";
+            this.lblAdministrador.Size = new System.Drawing.Size(70, 13);
+            this.lblAdministrador.TabIndex = 9;
+            this.lblAdministrador.Text = "Administrador";
+            this.lblAdministrador.Click += new System.EventHandler(this.label8_Click);
             // 
-            // txtCliente
+            // lblClave
             // 
-            this.txtCliente.Location = new System.Drawing.Point(134, 83);
-            this.txtCliente.Name = "txtCliente";
-            this.txtCliente.Size = new System.Drawing.Size(100, 20);
-            this.txtCliente.TabIndex = 17;
+            this.lblClave.AutoSize = true;
+            this.lblClave.Location = new System.Drawing.Point(58, 130);
+            this.lblClave.Name = "lblClave";
+            this.lblClave.Size = new System.Drawing.Size(34, 13);
+            this.lblClave.TabIndex = 12;
+            this.lblClave.Text = "Clave";
+            this.lblClave.Click += new System.EventHandler(this.label7_Click);
             // 
-            // btnEjecutar
+            // txtClave
             // 
-            this.btnEjecutar.Location = new System.Drawing.Point(21, 187);
-            this.btnEjecutar.Name = "btnEjecutar";
-            this.btnEjecutar.Size = new System.Drawing.Size(75, 23);
-            this.btnEjecutar.TabIndex = 9;
-            this.btnEjecutar.Text = "Ejecutar";
-            this.btnEjecutar.UseVisualStyleBackColor = true;
-            // 
-            // btnIniciar
-            // 
-            this.btnIniciar.Location = new System.Drawing.Point(45, 160);
-            this.btnIniciar.Name = "btnIniciar";
-            this.btnIniciar.Size = new System.Drawing.Size(75, 23);
-            this.btnIniciar.TabIndex = 18;
-            this.btnIniciar.Text = "Iniciar";
-            this.btnIniciar.UseVisualStyleBackColor = true;
-            // 
-            // dtgDatospersona
-            // 
-            this.dtgDatospersona.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgDatospersona.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dtgDatospersona.Location = new System.Drawing.Point(302, 20);
-            this.dtgDatospersona.Name = "dtgDatospersona";
-            this.dtgDatospersona.Size = new System.Drawing.Size(240, 150);
-            this.dtgDatospersona.TabIndex = 2;
-            this.dtgDatospersona.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // dtgDatoTipopersona
-            // 
-            this.dtgDatoTipopersona.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgDatoTipopersona.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dtgDatoTipopersona.Location = new System.Drawing.Point(302, 9);
-            this.dtgDatoTipopersona.Name = "dtgDatoTipopersona";
-            this.dtgDatoTipopersona.Size = new System.Drawing.Size(240, 150);
-            this.dtgDatoTipopersona.TabIndex = 3;
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.Location = new System.Drawing.Point(467, 187);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(75, 23);
-            this.btnSalir.TabIndex = 10;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
+            this.txtClave.Location = new System.Drawing.Point(103, 123);
+            this.txtClave.Name = "txtClave";
+            this.txtClave.Size = new System.Drawing.Size(140, 20);
+            this.txtClave.TabIndex = 11;
             // 
             // Form1
             // 
@@ -307,9 +307,9 @@
             this.Text = "FormularioPersona";
             this.grpDatospersona.ResumeLayout(false);
             this.grpDatospersona.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgDatospersona)).EndInit();
             this.grpDatosTipopersona.ResumeLayout(false);
             this.grpDatosTipopersona.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgDatospersona)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgDatoTipopersona)).EndInit();
             this.ResumeLayout(false);
 
