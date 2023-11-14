@@ -8,6 +8,7 @@ namespace Diseño
 {
     internal class Cliente
     {
+    }
             public class Cliente : Persona
     {
         public string Cedula { get; set; }
@@ -53,7 +54,5 @@ namespace Diseño
                 return this.CalcularTiempo() * 2000;
             }
         }
-    }
 }
-    }
 
