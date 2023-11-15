@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace Diseño
 {
-    internal class Cliente
-    {
-    }
-            public class Cliente : Persona
+
+    public class Cliente:Persona
     {
         public string Cedula { get; set; }
         public string Direccion { get; set; }
@@ -54,5 +52,7 @@ namespace Diseño
                 return this.CalcularTiempo() * 2000;
             }
         }
-}
 
+
+    }
+}
