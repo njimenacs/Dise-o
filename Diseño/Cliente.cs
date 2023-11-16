@@ -30,11 +30,6 @@ namespace Diseño
                 this.FechaHoraSalida = DateTime.Now;
             }
 
-            public void ImprimirTicket()
-            {
-                // Imprimir ticket
-            }
-
             public void ImprimirRecibo()
             {
                 // Imprimir recibo

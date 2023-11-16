@@ -23,8 +23,8 @@ namespace Diseño
         public string ModoDeControl { get; set; }
         public int Capacidad { get; set; }
 
-        public Tarifa Tarifa { get; set; }
-        public Horario Horario { get; set; }
+        public int Tarifa { get; set; }
+        public int Horario { get; set; }
 
         public bool Disponibilidad()
         {
@@ -46,12 +46,6 @@ namespace Diseño
         {
             this.FechaHoraSalida = DateTime.Now;
         }
-
-        public void ImprimirTicket()
-        {
-            // Imprimir ticket
-        }
-
         public void ImprimirRecibo()
         {
             // Imprimir recibo
