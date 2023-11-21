@@ -97,17 +97,17 @@
             // btnIngresar
             // 
             this.btnIngresar.Image = ((System.Drawing.Image)(resources.GetObject("btnIngresar.Image")));
-            this.btnIngresar.Location = new System.Drawing.Point(388, 215);
+            this.btnIngresar.Location = new System.Drawing.Point(376, 135);
             this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.Size = new System.Drawing.Size(104, 49);
+            this.btnIngresar.Size = new System.Drawing.Size(117, 70);
             this.btnIngresar.TabIndex = 6;
             this.btnIngresar.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(401, 270);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(387, 208);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(91, 65);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
