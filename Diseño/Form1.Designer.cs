@@ -43,24 +43,29 @@
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblIdentificacion = new System.Windows.Forms.Label();
             this.grpDatosTipopersona = new System.Windows.Forms.GroupBox();
-            this.dtgDatoTipopersona = new System.Windows.Forms.DataGridView();
-            this.btnIniciar = new System.Windows.Forms.Button();
-            this.txtCliente = new System.Windows.Forms.TextBox();
-            this.txtColaborador = new System.Windows.Forms.TextBox();
-            this.textAdministrador = new System.Windows.Forms.TextBox();
-            this.lblCliente = new System.Windows.Forms.Label();
-            this.lblColaborador = new System.Windows.Forms.Label();
-            this.lblAdministrador = new System.Windows.Forms.Label();
-            this.lblClave = new System.Windows.Forms.Label();
-            this.txtClave = new System.Windows.Forms.TextBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.mnuAdministrador = new System.Windows.Forms.ToolStripMenuItem();
+            this.colaboradorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nombreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.telefonoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.identificacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fechaNacimientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.emailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.picLogo = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblPARKINLOT = new System.Windows.Forms.Label();
             this.grpDatospersona.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgDatospersona)).BeginInit();
             this.grpDatosTipopersona.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgDatoTipopersona)).BeginInit();
+            this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // grpDatospersona
             // 
+            this.grpDatospersona.BackColor = System.Drawing.Color.DarkCyan;
+            this.grpDatospersona.Controls.Add(this.grpDatosTipopersona);
             this.grpDatospersona.Controls.Add(this.btnSalir);
             this.grpDatospersona.Controls.Add(this.btnEjecutar);
             this.grpDatospersona.Controls.Add(this.dtgDatospersona);
@@ -74,16 +79,16 @@
             this.grpDatospersona.Controls.Add(this.lblTelefono);
             this.grpDatospersona.Controls.Add(this.lblNombre);
             this.grpDatospersona.Controls.Add(this.lblIdentificacion);
-            this.grpDatospersona.Location = new System.Drawing.Point(23, 19);
+            this.grpDatospersona.Location = new System.Drawing.Point(12, 170);
             this.grpDatospersona.Name = "grpDatospersona";
-            this.grpDatospersona.Size = new System.Drawing.Size(585, 218);
+            this.grpDatospersona.Size = new System.Drawing.Size(585, 303);
             this.grpDatospersona.TabIndex = 0;
             this.grpDatospersona.TabStop = false;
             this.grpDatospersona.Text = "Datos de persona";
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(467, 187);
+            this.btnSalir.Location = new System.Drawing.Point(467, 263);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
             this.btnSalir.TabIndex = 10;
@@ -92,20 +97,20 @@
             // 
             // btnEjecutar
             // 
-            this.btnEjecutar.Location = new System.Drawing.Point(21, 187);
+            this.btnEjecutar.Location = new System.Drawing.Point(45, 274);
             this.btnEjecutar.Name = "btnEjecutar";
             this.btnEjecutar.Size = new System.Drawing.Size(75, 23);
             this.btnEjecutar.TabIndex = 9;
-            this.btnEjecutar.Text = "Ejecutar";
+            this.btnEjecutar.Text = "Guardar";
             this.btnEjecutar.UseVisualStyleBackColor = true;
             // 
             // dtgDatospersona
             // 
             this.dtgDatospersona.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgDatospersona.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dtgDatospersona.Location = new System.Drawing.Point(302, 20);
+            this.dtgDatospersona.Location = new System.Drawing.Point(177, 172);
             this.dtgDatospersona.Name = "dtgDatospersona";
-            this.dtgDatospersona.Size = new System.Drawing.Size(240, 150);
+            this.dtgDatospersona.Size = new System.Drawing.Size(197, 82);
             this.dtgDatospersona.TabIndex = 2;
             this.dtgDatospersona.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -193,125 +198,135 @@
             // 
             // grpDatosTipopersona
             // 
-            this.grpDatosTipopersona.Controls.Add(this.dtgDatoTipopersona);
-            this.grpDatosTipopersona.Controls.Add(this.btnIniciar);
-            this.grpDatosTipopersona.Controls.Add(this.txtCliente);
-            this.grpDatosTipopersona.Controls.Add(this.txtColaborador);
-            this.grpDatosTipopersona.Controls.Add(this.textAdministrador);
-            this.grpDatosTipopersona.Controls.Add(this.lblCliente);
-            this.grpDatosTipopersona.Controls.Add(this.lblColaborador);
-            this.grpDatosTipopersona.Controls.Add(this.lblAdministrador);
-            this.grpDatosTipopersona.Controls.Add(this.lblClave);
-            this.grpDatosTipopersona.Controls.Add(this.txtClave);
-            this.grpDatosTipopersona.Location = new System.Drawing.Point(23, 258);
+            this.grpDatosTipopersona.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.grpDatosTipopersona.Controls.Add(this.menuStrip1);
+            this.grpDatosTipopersona.Location = new System.Drawing.Point(290, 32);
             this.grpDatosTipopersona.Name = "grpDatosTipopersona";
-            this.grpDatosTipopersona.Size = new System.Drawing.Size(585, 202);
+            this.grpDatosTipopersona.Size = new System.Drawing.Size(277, 116);
             this.grpDatosTipopersona.TabIndex = 1;
             this.grpDatosTipopersona.TabStop = false;
             this.grpDatosTipopersona.Text = "Tipo de persona";
             // 
-            // dtgDatoTipopersona
+            // menuStrip1
             // 
-            this.dtgDatoTipopersona.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgDatoTipopersona.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dtgDatoTipopersona.Location = new System.Drawing.Point(302, 29);
-            this.dtgDatoTipopersona.Name = "dtgDatoTipopersona";
-            this.dtgDatoTipopersona.Size = new System.Drawing.Size(240, 150);
-            this.dtgDatoTipopersona.TabIndex = 3;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuAdministrador,
+            this.colaboradorToolStripMenuItem,
+            this.clienteToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(3, 16);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(271, 24);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // btnIniciar
+            // mnuAdministrador
             // 
-            this.btnIniciar.Location = new System.Drawing.Point(45, 160);
-            this.btnIniciar.Name = "btnIniciar";
-            this.btnIniciar.Size = new System.Drawing.Size(75, 23);
-            this.btnIniciar.TabIndex = 18;
-            this.btnIniciar.Text = "Iniciar";
-            this.btnIniciar.UseVisualStyleBackColor = true;
+            this.mnuAdministrador.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nombreToolStripMenuItem,
+            this.telefonoToolStripMenuItem,
+            this.identificacionToolStripMenuItem,
+            this.fechaNacimientoToolStripMenuItem,
+            this.emailToolStripMenuItem});
+            this.mnuAdministrador.Name = "mnuAdministrador";
+            this.mnuAdministrador.Size = new System.Drawing.Size(95, 20);
+            this.mnuAdministrador.Text = "Administrador";
             // 
-            // txtCliente
+            // colaboradorToolStripMenuItem
             // 
-            this.txtCliente.Location = new System.Drawing.Point(134, 83);
-            this.txtCliente.Name = "txtCliente";
-            this.txtCliente.Size = new System.Drawing.Size(100, 20);
-            this.txtCliente.TabIndex = 17;
+            this.colaboradorToolStripMenuItem.Name = "colaboradorToolStripMenuItem";
+            this.colaboradorToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
+            this.colaboradorToolStripMenuItem.Text = "Colaborador";
             // 
-            // txtColaborador
+            // clienteToolStripMenuItem
             // 
-            this.txtColaborador.Location = new System.Drawing.Point(134, 53);
-            this.txtColaborador.Name = "txtColaborador";
-            this.txtColaborador.Size = new System.Drawing.Size(100, 20);
-            this.txtColaborador.TabIndex = 16;
+            this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
+            this.clienteToolStripMenuItem.Text = "Cliente";
             // 
-            // textAdministrador
+            // nombreToolStripMenuItem
             // 
-            this.textAdministrador.Location = new System.Drawing.Point(134, 26);
-            this.textAdministrador.Name = "textAdministrador";
-            this.textAdministrador.Size = new System.Drawing.Size(100, 20);
-            this.textAdministrador.TabIndex = 15;
-            this.textAdministrador.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            this.nombreToolStripMenuItem.Name = "nombreToolStripMenuItem";
+            this.nombreToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nombreToolStripMenuItem.Text = "Nombre";
             // 
-            // lblCliente
+            // telefonoToolStripMenuItem
             // 
-            this.lblCliente.AutoSize = true;
-            this.lblCliente.Location = new System.Drawing.Point(58, 83);
-            this.lblCliente.Name = "lblCliente";
-            this.lblCliente.Size = new System.Drawing.Size(39, 13);
-            this.lblCliente.TabIndex = 14;
-            this.lblCliente.Text = "Cliente";
-            this.lblCliente.Click += new System.EventHandler(this.label11_Click);
+            this.telefonoToolStripMenuItem.Name = "telefonoToolStripMenuItem";
+            this.telefonoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.telefonoToolStripMenuItem.Text = "Telefono";
             // 
-            // lblColaborador
+            // identificacionToolStripMenuItem
             // 
-            this.lblColaborador.AutoSize = true;
-            this.lblColaborador.Location = new System.Drawing.Point(58, 55);
-            this.lblColaborador.Name = "lblColaborador";
-            this.lblColaborador.Size = new System.Drawing.Size(64, 13);
-            this.lblColaborador.TabIndex = 13;
-            this.lblColaborador.Text = "Colaborador";
+            this.identificacionToolStripMenuItem.Name = "identificacionToolStripMenuItem";
+            this.identificacionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.identificacionToolStripMenuItem.Text = "Identificacion";
             // 
-            // lblAdministrador
+            // fechaNacimientoToolStripMenuItem
             // 
-            this.lblAdministrador.AutoSize = true;
-            this.lblAdministrador.Location = new System.Drawing.Point(58, 29);
-            this.lblAdministrador.Name = "lblAdministrador";
-            this.lblAdministrador.Size = new System.Drawing.Size(70, 13);
-            this.lblAdministrador.TabIndex = 9;
-            this.lblAdministrador.Text = "Administrador";
-            this.lblAdministrador.Click += new System.EventHandler(this.label8_Click);
+            this.fechaNacimientoToolStripMenuItem.Name = "fechaNacimientoToolStripMenuItem";
+            this.fechaNacimientoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.fechaNacimientoToolStripMenuItem.Text = "FechaNacimiento";
             // 
-            // lblClave
+            // emailToolStripMenuItem
             // 
-            this.lblClave.AutoSize = true;
-            this.lblClave.Location = new System.Drawing.Point(58, 130);
-            this.lblClave.Name = "lblClave";
-            this.lblClave.Size = new System.Drawing.Size(34, 13);
-            this.lblClave.TabIndex = 12;
-            this.lblClave.Text = "Clave";
-            this.lblClave.Click += new System.EventHandler(this.label7_Click);
+            this.emailToolStripMenuItem.Name = "emailToolStripMenuItem";
+            this.emailToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.emailToolStripMenuItem.Text = "Email";
             // 
-            // txtClave
+            // picLogo
             // 
-            this.txtClave.Location = new System.Drawing.Point(103, 123);
-            this.txtClave.Name = "txtClave";
-            this.txtClave.Size = new System.Drawing.Size(140, 20);
-            this.txtClave.TabIndex = 11;
+            this.picLogo.BackColor = System.Drawing.Color.Khaki;
+            this.picLogo.Image = global::Diseño.Properties.Resources.logop;
+            this.picLogo.Location = new System.Drawing.Point(12, 22);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(150, 118);
+            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picLogo.TabIndex = 1;
+            this.picLogo.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "label1";
+            // 
+            // lblPARKINLOT
+            // 
+            this.lblPARKINLOT.AutoSize = true;
+            this.lblPARKINLOT.BackColor = System.Drawing.Color.Honeydew;
+            this.lblPARKINLOT.Font = new System.Drawing.Font("Algerian", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPARKINLOT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblPARKINLOT.Location = new System.Drawing.Point(329, 61);
+            this.lblPARKINLOT.Name = "lblPARKINLOT";
+            this.lblPARKINLOT.Size = new System.Drawing.Size(247, 39);
+            this.lblPARKINLOT.TabIndex = 3;
+            this.lblPARKINLOT.Text = "PARKING LOT";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 504);
-            this.Controls.Add(this.grpDatosTipopersona);
+            this.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.ClientSize = new System.Drawing.Size(690, 504);
+            this.Controls.Add(this.lblPARKINLOT);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.picLogo);
             this.Controls.Add(this.grpDatospersona);
             this.Name = "Form1";
-            this.Text = "FormularioPersona";
+            this.Text = "Formulario persona";
             this.grpDatospersona.ResumeLayout(false);
             this.grpDatospersona.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgDatospersona)).EndInit();
             this.grpDatosTipopersona.ResumeLayout(false);
             this.grpDatosTipopersona.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgDatoTipopersona)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -329,19 +344,21 @@
         private System.Windows.Forms.TextBox txtIdentificacio;
         private System.Windows.Forms.DateTimePicker dtpFechaNacimiento;
         private System.Windows.Forms.GroupBox grpDatosTipopersona;
-        private System.Windows.Forms.Label lblClave;
-        private System.Windows.Forms.TextBox txtClave;
-        private System.Windows.Forms.Label lblAdministrador;
-        private System.Windows.Forms.Label lblCliente;
-        private System.Windows.Forms.Label lblColaborador;
-        private System.Windows.Forms.TextBox textAdministrador;
-        private System.Windows.Forms.TextBox txtCliente;
-        private System.Windows.Forms.TextBox txtColaborador;
         private System.Windows.Forms.Button btnEjecutar;
-        private System.Windows.Forms.Button btnIniciar;
         private System.Windows.Forms.DataGridView dtgDatospersona;
-        private System.Windows.Forms.DataGridView dtgDatoTipopersona;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem mnuAdministrador;
+        private System.Windows.Forms.ToolStripMenuItem colaboradorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nombreToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem telefonoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem identificacionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fechaNacimientoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem emailToolStripMenuItem;
+        private System.Windows.Forms.PictureBox picLogo;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblPARKINLOT;
     }
 }
 
