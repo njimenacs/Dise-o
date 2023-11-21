@@ -4,14 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Diseño
+namespace Diseño  // Recomiendo antes de que sigan, que primero conecten la base de datos a el proyecto
 {
     internal class Persona
     {
+        // Camparación de variables con la base de datos
+
+        //agregar int id_persona;
         int Identificacion;
         string Nombre;
-        int Telefono;
+        int Telefono; /* esta variables es: "telefono" en minuscula.. */
         string email;
+        //agregar fechaDeNacimiento;
         int clave;
 
         public int Identificacion1 { get => Identificacion; set => Identificacion = value; }

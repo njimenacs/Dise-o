@@ -7,10 +7,11 @@ using System.Threading.Tasks;
 namespace Diseño
 {
 
-    public class Cliente:Persona
+    public class Cliente:Persona // Esta clase hereda directamente de la clase Persona
     {
-        public string Cedula { get; set; }
-        public string Direccion { get; set; }
+        // Agregar estas dos clases a la base de datos en la tabla Persona solo si se necesitan.
+        public string Cedula { get; set; } // tocaria agregar "Cedula" a la tabla Persona en la base de datos
+        public string Direccion { get; set; } // tocaria agregar "Direccion" a la tabla Persona en la base de datos
 
         public class Parqueo
         {
