@@ -29,6 +29,16 @@
         private void InitializeComponent()
         {
             this.grpDatospersona = new System.Windows.Forms.GroupBox();
+            this.grpDatosTipopersona = new System.Windows.Forms.GroupBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.mnuAdministrador = new System.Windows.Forms.ToolStripMenuItem();
+            this.nombreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.telefonoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.identificacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fechaNacimientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.emailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.colaboradorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnEjecutar = new System.Windows.Forms.Button();
             this.dtgDatospersona = new System.Windows.Forms.DataGridView();
@@ -42,29 +52,21 @@
             this.lblTelefono = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblIdentificacion = new System.Windows.Forms.Label();
-            this.grpDatosTipopersona = new System.Windows.Forms.GroupBox();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.mnuAdministrador = new System.Windows.Forms.ToolStripMenuItem();
-            this.colaboradorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nombreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.telefonoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.identificacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fechaNacimientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.emailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.picLogo = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lblPARKINLOT = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.grpDatospersona.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgDatospersona)).BeginInit();
             this.grpDatosTipopersona.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgDatospersona)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // grpDatospersona
             // 
             this.grpDatospersona.BackColor = System.Drawing.Color.DarkCyan;
+            this.grpDatospersona.Controls.Add(this.button1);
             this.grpDatospersona.Controls.Add(this.grpDatosTipopersona);
             this.grpDatospersona.Controls.Add(this.btnSalir);
             this.grpDatospersona.Controls.Add(this.btnEjecutar);
@@ -85,6 +87,83 @@
             this.grpDatospersona.TabIndex = 0;
             this.grpDatospersona.TabStop = false;
             this.grpDatospersona.Text = "Datos de persona";
+            // 
+            // grpDatosTipopersona
+            // 
+            this.grpDatosTipopersona.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.grpDatosTipopersona.Controls.Add(this.menuStrip1);
+            this.grpDatosTipopersona.Location = new System.Drawing.Point(290, 32);
+            this.grpDatosTipopersona.Name = "grpDatosTipopersona";
+            this.grpDatosTipopersona.Size = new System.Drawing.Size(277, 116);
+            this.grpDatosTipopersona.TabIndex = 1;
+            this.grpDatosTipopersona.TabStop = false;
+            this.grpDatosTipopersona.Text = "Tipo de persona";
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuAdministrador,
+            this.colaboradorToolStripMenuItem,
+            this.clienteToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(3, 16);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(271, 24);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // mnuAdministrador
+            // 
+            this.mnuAdministrador.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nombreToolStripMenuItem,
+            this.telefonoToolStripMenuItem,
+            this.identificacionToolStripMenuItem,
+            this.fechaNacimientoToolStripMenuItem,
+            this.emailToolStripMenuItem});
+            this.mnuAdministrador.Name = "mnuAdministrador";
+            this.mnuAdministrador.Size = new System.Drawing.Size(95, 20);
+            this.mnuAdministrador.Text = "Administrador";
+            // 
+            // nombreToolStripMenuItem
+            // 
+            this.nombreToolStripMenuItem.Name = "nombreToolStripMenuItem";
+            this.nombreToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.nombreToolStripMenuItem.Text = "Nombre";
+            // 
+            // telefonoToolStripMenuItem
+            // 
+            this.telefonoToolStripMenuItem.Name = "telefonoToolStripMenuItem";
+            this.telefonoToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.telefonoToolStripMenuItem.Text = "Telefono";
+            // 
+            // identificacionToolStripMenuItem
+            // 
+            this.identificacionToolStripMenuItem.Name = "identificacionToolStripMenuItem";
+            this.identificacionToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.identificacionToolStripMenuItem.Text = "Identificacion";
+            // 
+            // fechaNacimientoToolStripMenuItem
+            // 
+            this.fechaNacimientoToolStripMenuItem.Name = "fechaNacimientoToolStripMenuItem";
+            this.fechaNacimientoToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.fechaNacimientoToolStripMenuItem.Text = "FechaNacimiento";
+            // 
+            // emailToolStripMenuItem
+            // 
+            this.emailToolStripMenuItem.Name = "emailToolStripMenuItem";
+            this.emailToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.emailToolStripMenuItem.Text = "Email";
+            // 
+            // colaboradorToolStripMenuItem
+            // 
+            this.colaboradorToolStripMenuItem.Name = "colaboradorToolStripMenuItem";
+            this.colaboradorToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
+            this.colaboradorToolStripMenuItem.Text = "Colaborador";
+            // 
+            // clienteToolStripMenuItem
+            // 
+            this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
+            this.clienteToolStripMenuItem.Text = "Cliente";
             // 
             // btnSalir
             // 
@@ -196,83 +275,6 @@
             this.lblIdentificacion.Text = "Identificacion";
             this.lblIdentificacion.Click += new System.EventHandler(this.label1_Click);
             // 
-            // grpDatosTipopersona
-            // 
-            this.grpDatosTipopersona.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.grpDatosTipopersona.Controls.Add(this.menuStrip1);
-            this.grpDatosTipopersona.Location = new System.Drawing.Point(290, 32);
-            this.grpDatosTipopersona.Name = "grpDatosTipopersona";
-            this.grpDatosTipopersona.Size = new System.Drawing.Size(277, 116);
-            this.grpDatosTipopersona.TabIndex = 1;
-            this.grpDatosTipopersona.TabStop = false;
-            this.grpDatosTipopersona.Text = "Tipo de persona";
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuAdministrador,
-            this.colaboradorToolStripMenuItem,
-            this.clienteToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(3, 16);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(271, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // mnuAdministrador
-            // 
-            this.mnuAdministrador.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nombreToolStripMenuItem,
-            this.telefonoToolStripMenuItem,
-            this.identificacionToolStripMenuItem,
-            this.fechaNacimientoToolStripMenuItem,
-            this.emailToolStripMenuItem});
-            this.mnuAdministrador.Name = "mnuAdministrador";
-            this.mnuAdministrador.Size = new System.Drawing.Size(95, 20);
-            this.mnuAdministrador.Text = "Administrador";
-            // 
-            // colaboradorToolStripMenuItem
-            // 
-            this.colaboradorToolStripMenuItem.Name = "colaboradorToolStripMenuItem";
-            this.colaboradorToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
-            this.colaboradorToolStripMenuItem.Text = "Colaborador";
-            // 
-            // clienteToolStripMenuItem
-            // 
-            this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
-            this.clienteToolStripMenuItem.Text = "Cliente";
-            // 
-            // nombreToolStripMenuItem
-            // 
-            this.nombreToolStripMenuItem.Name = "nombreToolStripMenuItem";
-            this.nombreToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.nombreToolStripMenuItem.Text = "Nombre";
-            // 
-            // telefonoToolStripMenuItem
-            // 
-            this.telefonoToolStripMenuItem.Name = "telefonoToolStripMenuItem";
-            this.telefonoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.telefonoToolStripMenuItem.Text = "Telefono";
-            // 
-            // identificacionToolStripMenuItem
-            // 
-            this.identificacionToolStripMenuItem.Name = "identificacionToolStripMenuItem";
-            this.identificacionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.identificacionToolStripMenuItem.Text = "Identificacion";
-            // 
-            // fechaNacimientoToolStripMenuItem
-            // 
-            this.fechaNacimientoToolStripMenuItem.Name = "fechaNacimientoToolStripMenuItem";
-            this.fechaNacimientoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.fechaNacimientoToolStripMenuItem.Text = "FechaNacimiento";
-            // 
-            // emailToolStripMenuItem
-            // 
-            this.emailToolStripMenuItem.Name = "emailToolStripMenuItem";
-            this.emailToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.emailToolStripMenuItem.Text = "Email";
-            // 
             // picLogo
             // 
             this.picLogo.BackColor = System.Drawing.Color.Khaki;
@@ -305,6 +307,16 @@
             this.lblPARKINLOT.TabIndex = 3;
             this.lblPARKINLOT.Text = "PARKING LOT";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(230, 274);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(119, 23);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "conexion MySQL";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -319,11 +331,11 @@
             this.Text = "Formulario persona";
             this.grpDatospersona.ResumeLayout(false);
             this.grpDatospersona.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgDatospersona)).EndInit();
             this.grpDatosTipopersona.ResumeLayout(false);
             this.grpDatosTipopersona.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgDatospersona)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -359,6 +371,7 @@
         private System.Windows.Forms.PictureBox picLogo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblPARKINLOT;
+        private System.Windows.Forms.Button button1;
     }
 }
 

@@ -56,5 +56,11 @@ namespace Diseño
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Clases.CConexion objetoconexion = new Clases.CConexion();
+            objetoconexion.establecerconexion();
+        }
     }
 }
