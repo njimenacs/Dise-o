@@ -6,27 +6,38 @@ using System.Threading.Tasks;
 
 namespace Diseño
 {
-    internal class Administrador
-    {
-    }
-    public class Administrador : Persona
+    public class Administrador : Persona // toca borrar esta clase o la de arriba // SE BORRO LA INTERNAL
 {
-    public string Usuario { get; set; }
+        /*  
+            En esta clase según la base de datos se heredan las variables de la clase Persona.
+            "Definir cuales se heredaran según la necesidad."
+            BASADO EN LA IMAGEN DEL WORD NO HEREDA NADA DE CLASE PERSONA, SI PUEDEN VER PERTINENTE AGREGAR UNA HERENCIA
+            EN ESTE ESPACIO ME LO HACEN SABER COMPAÑER@S
+        */
+    public string Usuario { get; set; } /* Tocaria agregarlo a la base de datos como una tabla
+                                           debido a que serviria mejor como una clase padre para
+                                           manejar los 3 tipos de usuar = "Administrador", "Colaborador", "Cliente".
+                                           y esta clase Usuario Heredara de Persona y dara herencia a esas 3 subclases.
+                                        */
 
     public class Parqueadero
     {
-        public string Nombre { get; set; }
-        public string Tipo { get; set; }
-        public string Direccion { get; set; }
-        public string Ciudad { get; set; }
-        public string Coordenadas { get; set; }
-        public string ModoDeControl { get; set; }
-        public int Capacidad { get; set; }
+        //Agregar la variable: id_parqueadero; //AGREGADA
+        public int id_parqueadero { get; set; }
+        public string nombre { get; set; } // Esta variable es: "nombre" //CORREGIDO 
+        public string clase { get; set; } // Esta variable es: "clase" //CORREGIDO
+        public string direccion { get; set; } // Esta variable es: "direccion" //CORREGIDO
+        public string ciudad { get; set; } // Esta variable es: "ciudad" //CORREGIDO
+        public string coordenadas { get; set; } // Esta variable es: "coordenadas" //CORREGIDO
+        public string modoDeControl { get; set; } // Esta variable es: "modoDeControl" //CORREGIDO
+        public int capacidad { get; set; } // Esta variable es: "capacidad" //CORREGIDO
+        //Agregar la variable: disponibilidad;// AGREGADA, YA ESTA EN LA PARTE DE ABAJI
+        public int Tarifa { get; set; } // Esta variable es una llave Foranea FK heredada de la clase o tabla tarifa
+        public int Horario { get; set; } // Igual que tarifa solo que en la base de datos no esta relacionada a parqueadero
+        //ESTAS VARIABLES FK Tarifa y Horario SE HICIERON EN BASE A LA IMAGEN DEL WORD, LAS CUALES DICEN QUE SON DE LA 
+        //CLASE Parqueadero, MEPODRIAN EXPLICAR A QUE SE REFIEREN, OSEA SI VA FUERA DE ESTA CLASE O COMO
 
-        public int Tarifa { get; set; }
-        public int Horario { get; set; }
-
-        public bool Disponibilidad()
+        public bool disponibilidad()
         {
             // Calcular disponibilidad
             return this.Capacidad > 0;

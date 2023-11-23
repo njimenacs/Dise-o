@@ -5,15 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 
-namespace Diseño
+namespace Diseño  // Recomiendo antes de que sigan, que primero conecten la base de datos a el proyecto
 {
     internal class Persona
     {
-        
         int Identificacion;
         string Nombre;
-        int Telefono;
+        int Telefono; /* esta variables es: "telefono" en minuscula.. */
         string email;
+        //agregar fechaDeNacimiento;
         int clave;
 
         public int Identificacion1 { get => Identificacion; set => Identificacion = value; }

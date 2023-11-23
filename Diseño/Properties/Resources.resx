@@ -124,10 +124,13 @@
   <data name="96369539-reproducir-ejecutar-imagen-de-icono-multimedia-también-se-puede-utilizar-para-hardware" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\96369539-reproducir-ejecutar-imagen-de-icono-multimedia-también-se-puede-utilizar-para-hardware.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="sknf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sknf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="social_media_login_user_profile_account_password_logout_icon_212484" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\social_media_login_user_profile_account_password_logout_icon_212484.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sknf" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sknf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logop.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
